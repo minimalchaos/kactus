@@ -23,13 +23,13 @@
 
         {{! OpenGraph for Facebook }}
         <meta property="og:title" content="{{meta_title}}" />
-        <meta property="og:image" content="{{@blog.url}}/assets/images/open-graph.png" />
+        <meta property="og:image" content="{{@site.url}}/assets/images/open-graph.png" />
         <meta property="og:locale" content="en_US" />
 
         {{! Twitter Card }}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:title" content="{{meta_title}}" />
-        {{#if @blog.cover}}<meta property="twitter:image" content="{{@blog.cover}}" />{{/if}}
+        {{#if @site.cover_image}}<meta property="twitter:image" content="{{@site.cover_image}}" />{{/if}}
 
         {{! Icons }}
         <link rel="icon" href="{{asset 'favicon.ico'}}" />
@@ -37,9 +37,9 @@
         <link rel="apple-touch-icon" href="{{asset 'images/apple-touch-icon.png'}}" />
 
         {{! Prerendering and Prefetching }}
-        {{#if @blog.cover}}
-            <link rel="prerender" href="{{@blog.cover}}" />
-            <link rel="prefetch" href="{{@blog.cover}}" />
+        {{#if @site.cover_image}}
+            <link rel="prerender" href="{{@site.cover_image}}" />
+            <link rel="prefetch" href="{{@site.cover_image}}" />
         {{/if}}
 
         {{! Scripts and Stylesheets }}
@@ -60,7 +60,7 @@
 
         <section id="wrapper">
             <header id="header">
-                <a id="title" class="index" href="{{@blog.url}}">{{@blog.title}}</a>
+                <a id="title" class="index" href="{{@site.url}}">{{@site.title}}</a>
             </header>
 
             {{{body}}}

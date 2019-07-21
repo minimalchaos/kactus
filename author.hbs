@@ -3,8 +3,9 @@
 <article class="post clearfix">
 
     {{#author}}
-
-        <img id="photo" src="{{image}}" alt={{name}} />
+        {{#if profile_image}}
+            <img id="photo" src="{{img_url profile_image}}" alt={{name}} />
+        {{/if}}
         <div id="details">
             <header>
                 <h1>{{name}}</h1>

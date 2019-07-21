@@ -1,15 +1,17 @@
 {
-  "name": "Cactus",
-  "version": "1.0.1",
+  "name": "cactus",
+  "version": "2.0",
   "description": "A minimalistic theme for Ghost inspired by Cactus for Mac.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/splinterific/ghost-cactus"
+    "url": "https://github.com/minimalchaos/kactus"
   },
-  "author": "Mark Preston <markgpreston@gmail.com>",
+  "author": {
+    "email": "abhirup.m@icloud.com"
+  },
   "bugs": {
-    "url": "https://github.com/splinterific/ghost-themes/issues"
+    "url": "https://github.com/minimalchaos/kactus/issues"
   },
-  "homepage": "https://github.com/splinterific/ghost-themes",
+  "homepage": "https://badbytes.sh",
   "private": true
 }
